@@ -14,19 +14,43 @@
 
     <main id="container">
         <article class="container__left">
-            <section class="concepts">Today's Concepts
-                <form action=""></form>
+            
+                <form action="">
+                    <fieldset class="calendar">
+                        <h2>
+                            <label for="journalDate">What day is it?</label>
+                        </h2>
+                        <input type="date" name="journalDate" id="journalDate">
+                    </fieldset>
+                </form>
+
+                <form action="">
+                    <textarea name="journalConcepts" id="" cols="50" rows="3"></textarea>
+                </form>
             </section>
 
             <section class="journal__entry">
-                <form action=""></form>
+                <h2>Today's Entry</h2>
+                <form action="">
+                    <textarea name="journalEntry" id="" cols="100" rows="20"></textarea>
+                </form>
             </section>
 
-            <div class="entry__button">
-                <form action=""></form>
+            <div class="mood__dropdown">
+                <form action="">
+                    <label for="moodDropdown">Today's Mood</label>
+                    <select name="moodDropdown" id="moodDropdown">
+                        <option value="pickOne">Please Select a Mood</option>
+                        <option value="stressed">Stressed</option>
+                        <option value="anxious">Anxious</option>
+                        <option value="overwhelmed">Overwhelmed</option>
+                        <option value="freakingOut">Freaking Out</option>
+                        <option value="notBad">Actually Not That Bad!</option>
+                    </select>
+                </form>
             </div>
 
-            <div class="mood__dropdown">
+            <div class="entry__button">
                 <form action=""></form>
             </div>
 
@@ -40,9 +64,6 @@
         </article>
 
         <article class="container__right">
-            <section class="calendar">
-                <form action=""></form>
-            </section>
 
             <section class="entry__list">
                 <form action=""></form>
