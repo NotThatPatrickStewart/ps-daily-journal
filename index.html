@@ -14,31 +14,38 @@
 
     <main id="container">
         <article class="container__left">
-            
-                <form action="">
-                    <fieldset class="calendar">
-                        <h2>
-                            <label for="journalDate">What day is it?</label>
-                        </h2>
-                        <input type="date" name="journalDate" id="journalDate">
-                    </fieldset>
-                </form>
 
-                <form action="">
-                    <textarea name="journalConcepts" id="" cols="50" rows="3"></textarea>
-                </form>
+            <form action="">
+                <fieldset class="calendar">
+                    <h2>
+                        <label for="journalDate">What day is it?</label>
+                    </h2>
+                    <input type="date" name="journalDate" id="journalDate">
+                </fieldset>
+            </form>
+
+            <form action="">
+                <h2>
+                    <label for="journalConcepts">Today's Concepts</label>
+                </h2>
+                <textarea name="journalConcepts" id="" cols="50" rows="3"></textarea>
+            </form>
             </section>
 
             <section class="journal__entry">
-                <h2>Today's Entry</h2>
                 <form action="">
+                    <h2>
+                        <label for="journalEntry">Today's Entry</label>
+                    </h2>
                     <textarea name="journalEntry" id="" cols="100" rows="20"></textarea>
                 </form>
             </section>
 
             <div class="mood__dropdown">
-                <form action="">
-                    <label for="moodDropdown">Today's Mood</label>
+                <form class="mood" action="">
+                    <h2>
+                        <label for="moodDropdown">Today's Mood</label>
+                    </h2>
                     <select name="moodDropdown" id="moodDropdown">
                         <option value="pickOne">Please Select a Mood</option>
                         <option value="stressed">Stressed</option>
@@ -51,7 +58,9 @@
             </div>
 
             <div class="entry__button">
-                <form action=""></form>
+                <form class="submit" action="">
+                    <button type="submit" form="journalEntry" value="submit">Yeet</button>
+                </form>
             </div>
 
             <div class="edit__button">
