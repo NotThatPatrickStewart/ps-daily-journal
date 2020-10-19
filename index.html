@@ -15,34 +15,28 @@
     <main id="container">
         <article class="container__left">
 
-            <form action="">
+            <form class="to__submit" action="">
+                <h2>
+                    <label for="journalDate">What day is it?</label>
+                </h2>
                 <fieldset class="calendar">
-                    <h2>
-                        <label for="journalDate">What day is it?</label>
-                    </h2>
                     <input type="date" name="journalDate" id="journalDate">
                 </fieldset>
-            </form>
-
-            <form action="">
+            
                 <h2>
                     <label for="journalConcepts">Today's Concepts</label>
                 </h2>
                 <textarea name="journalConcepts" id="" cols="50" rows="3"></textarea>
-            </form>
             </section>
 
             <section class="journal__entry">
-                <form action="">
                     <h2>
                         <label for="journalEntry">Today's Entry</label>
                     </h2>
                     <textarea name="journalEntry" id="" cols="100" rows="20"></textarea>
-                </form>
             </section>
 
             <div class="mood__dropdown">
-                <form class="mood" action="">
                     <h2>
                         <label for="moodDropdown">Today's Mood</label>
                     </h2>
@@ -54,34 +48,30 @@
                         <option value="freakingOut">Freaking Out</option>
                         <option value="notBad">Actually Not That Bad!</option>
                     </select>
-                </form>
             </div>
 
             <div class="entry__button">
                 <form class="submit" action="">
-                    <button type="submit" form="journalEntry" value="submit">Yeet</button>
-                </form>
+                    <button type="submit" form="to__submit" value="submit">Yeet</button>
             </div>
 
             <div class="edit__button">
-                <form action=""></form>
             </div>
 
             <div class="delete__butoon">
-                <form action=""></form>
             </div>
         </article>
 
         <article class="container__right">
 
             <section class="entry__list">
-                <form action=""></form>
             </section>
+        </form>
         </article>
     </main>
 
     <footer>Patrick Stewart |
-        <link rel="github" href="https://github.com/NotThatPatrickStewart"> | copyright 2020</footer>
+      <a href="https://github.com/NotThatPatrickStewart">My Github</a> | copyright 2020</footer>
 
     <script type="module" src="./scripts/main.js"></script>
 </body>
