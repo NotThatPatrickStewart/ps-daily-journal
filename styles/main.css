@@ -27,10 +27,9 @@ header {
 	display: flex;
 	flex-direction: column;
 	width: fit-content;
-
 }
 
-.submit {
+.entry__button {
 	display: flex;
 	padding-top: 2em;
 	padding-bottom: 2em;
