@@ -1,3 +1,10 @@
+const dispatchStateChangeEvent = () => {
+    const entryStateChangeEvent = new CustomEvent("entryStateChanged")
+
+    eventHub.dispatchEvent(entryStateChangeEvent)
+}
+
+const eventHub = document.querySelector(".container")
 /*
  *   Journal data provider for Daily Journal application
  *
@@ -14,11 +21,7 @@ let journal = []
     raw data in the format that you want
 */
 export const useJournalEntries = () => {
-    const sortedByDate = journal.sort(
-        (currentEntry, nextEntry) =>
-            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
-    )
-    return sortedByDate
+  return journal.slice()
 }
 
 export const getEntries = () => {
@@ -27,4 +30,17 @@ export const getEntries = () => {
     .then(parsedEntries => {
         journal = parsedEntries
     })
+}
+
+//create copy of the array (useJournalEntries)
+export const saveEntry = entry => {
+    return fetch("http://localhost:8088/journal", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(entry)
+    })
+    .then(getEntries)
+    .then(dispatchStateChangeEvent)
 }

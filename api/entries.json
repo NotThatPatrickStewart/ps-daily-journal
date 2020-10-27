@@ -1,25 +1,46 @@
 {
-    "journal": [
+  "journal": [
     {
-        "id": 1,
-        "date": "07/24/2025",
-        "concept": "HTML & CSS",
-        "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        "mood": "Ok"
+      "id": 1,
+      "timestamp": "07/24/2025",
+      "journalConcepts": "HTML & CSS",
+      "journalEntry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "moodDropdown": "Ok"
     },
     {
-        "id": 2,
-        "date": "10/10/2020",
-        "concept": "Data Provider",
-        "entry": "I learned how to create a data provider file in js to hold the data I want to show as HTML in the DOM.",
-        "mood": "Overwhelmed"
+      "id": 2,
+      "timestamp": "10/10/2020",
+      "journalConcepts": "Data Provider",
+      "journalEntry": "I learned how to create a data provider file in js to hold the data I want to show as HTML in the DOM.",
+      "moodDropdown": "Overwhelmed"
     },
     {
-        "id": 3,
-        "date": "10/15/2020",
-        "concept": "List Files",
-        "entry": "I learned how to create a list file in js to hold the HTML representatins of the js that I want to show",
-        "mood": "Stressed"
+      "id": 3,
+      "timestamp": "10/15/2020",
+      "journalConcepts": "List Files",
+      "journalEntry": "I learned how to create a list file in js to hold the HTML representatins of the js that I want to show",
+      "moodDropdown": "Stressed"
+    },
+    {
+      "timestamp": 1603817668720,
+      "journalConcepts": "Refactoring code",
+      "journalEntry": "I refactored my journal to remove everything hardwired into the index.html , creating a journal form file and refactoring the rest of my journal files so that these forms actually function, and the save button will actually save these forms to the dom.",
+      "moodDropdown": "notBad",
+      "id": 4
+    },
+    {
+      "timestamp": 1603817799986,
+      "journalConcepts": "NA",
+      "journalEntry": "Testing updated mood values",
+      "moodDropdown": "Actually Not That Bad!",
+      "id": 5
+    },
+    {
+      "timestamp": 1603818015592,
+      "journalConcepts": "Test",
+      "journalEntry": "Re-adding all entries",
+      "moodDropdown": "Overwhelmed",
+      "id": 6
     }
-]
+  ]
 }
