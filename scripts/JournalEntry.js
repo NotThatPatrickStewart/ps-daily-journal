@@ -4,12 +4,11 @@
  */
 export const JournalEntryComponent = (entry) => {
     return `
-        <section id="entry--${entry.id}" class="journalEntry">
-            <p class="entry__date">${entry.date}</p>
-            <p class="entry__concept">${entry.concept}</p>
-            <p class="entry__entry">${entry.entry}</p>
-            <p class="entry__mood">${entry.mood}</p>
-            concept 
-        </section>
+    <div class="entry">    
+    <p class="note__timestamp"> Date: ${new Date(entry.timestamp).toLocaleDateString('en-US')}</p> 
+    <p class="entry__journalConcepts"> Concept: ${entry.journalConcepts}</p>
+    <p class="entry__journalEntry"> Entry: ${entry.journalEntry}</p>
+    <p class="entry__moodDropdown"> Mood: ${entry.moodDropdown}</p>
+    </div>
     `
 }

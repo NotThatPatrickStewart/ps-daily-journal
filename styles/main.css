@@ -23,14 +23,21 @@ header {
 	justify-content: center;
 }
 
-.calendar {
+.container__left {
 	display: flex;
 	flex-direction: column;
 	width: fit-content;
 }
 
-.entry__button {
-	display: flex;
-	padding-top: 2em;
-	padding-bottom: 2em;
+.entry {
+	border: solid black 1px;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
+#moodDropdown {
+	width: 200px;
+}
+
+#saveEntry, #editEntry, #deleteEntry {
+	width: 100px;
+} 
