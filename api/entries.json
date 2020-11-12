@@ -1,46 +1,25 @@
 {
-  "journal": [
+  "journal": [],
+  "moods": [
     {
-      "id": 1,
-      "timestamp": "07/24/2025",
-      "journalConcepts": "HTML & CSS",
-      "journalEntry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "moodDropdown": "Ok"
+    "id": 1,
+    "label": "Stressed"
     },
     {
-      "id": 2,
-      "timestamp": "10/10/2020",
-      "journalConcepts": "Data Provider",
-      "journalEntry": "I learned how to create a data provider file in js to hold the data I want to show as HTML in the DOM.",
-      "moodDropdown": "Overwhelmed"
+    "id": 2,
+    "label": "Anxious"
     },
     {
-      "id": 3,
-      "timestamp": "10/15/2020",
-      "journalConcepts": "List Files",
-      "journalEntry": "I learned how to create a list file in js to hold the HTML representatins of the js that I want to show",
-      "moodDropdown": "Stressed"
+    "id": 3,
+    "label": "Overwhelmed"
     },
     {
-      "timestamp": 1603817668720,
-      "journalConcepts": "Refactoring code",
-      "journalEntry": "I refactored my journal to remove everything hardwired into the index.html , creating a journal form file and refactoring the rest of my journal files so that these forms actually function, and the save button will actually save these forms to the dom.",
-      "moodDropdown": "notBad",
-      "id": 4
+    "id": 4,
+    "label": "Freaking Out"
     },
     {
-      "timestamp": 1603817799986,
-      "journalConcepts": "NA",
-      "journalEntry": "Testing updated mood values",
-      "moodDropdown": "Actually Not That Bad!",
-      "id": 5
-    },
-    {
-      "timestamp": 1603818015592,
-      "journalConcepts": "Test",
-      "journalEntry": "Re-adding all entries",
-      "moodDropdown": "Overwhelmed",
-      "id": 6
+    "id": 5,
+    "label": "Actually Not That Bad!"
     }
   ]
 }
