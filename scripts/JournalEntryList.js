@@ -6,6 +6,7 @@
  */
 import { getEntries, useJournalEntries } from "./JournalDataProvider.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
+import { getMood, useMood } from "./MoodProvider.js"
 
 const contentTarget = document.querySelector(".container__left")
 const eventHub = document.querySelector(".container")
@@ -13,16 +14,21 @@ const eventHub = document.querySelector(".container")
 eventHub.addEventListener("entryStateChanged", () => EntryListComponent())
 
 export const EntryListComponent = () => {
-    getEntries().then(() => {
+    getEntries()
+    .then(getMood)
+    .then(() => {
         const allEntries = useJournalEntries()
-        render(allEntries)
+        const allMoods = useMood()
+       
+        render(allEntries, allMoods)
     })
 }
 
-const render = entriesCollection => {
+const render = (entriesCollection, moodsCollection) => {
     let entryHTMLRepresentation = ""
     for (const entry of entriesCollection) {
-        entryHTMLRepresentation += JournalEntryComponent(entry)
+        const entryMood = moodsCollection.find(mood => mood.id === entry.moodId)
+        entryHTMLRepresentation += JournalEntryComponent(entry, entryMood)
     }
     contentTarget.innerHTML += `
     ${entryHTMLRepresentation}
